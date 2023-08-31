@@ -1,0 +1,148 @@
+:root {
+  --yellow: #ff8504;
+  --black: #33343f;
+  --paragraph: #4d4d4d;
+  --bg-white: #f4f4f4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* sidebar */
+.td-sidebar {
+  background-color: var(--black);
+}
+.td-dashboard-logo {
+  width: 214px;
+  padding-top: 45px;
+  margin-bottom: 65px;
+}
+.td-sidebar-menu li {
+  padding-inline: 50px;
+  padding-block: 10px;
+  cursor: pointer;
+}
+.td-sidebar-menu li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 42px;
+  text-decoration: none;
+}
+.td-sidebar-menu li div {
+  border-radius: 10px;
+  background: rgba(255, 133, 4, 0.15);
+  width: 32px;
+  height: 32px;
+}
+.td-sidebar-menu li:hover,
+.td-sidebar-menu .active {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+.td-sidebar-menu .active a {
+  color: var(--black);
+}
+.td-sidebar-menu li:hover div,
+.td-sidebar-menu .active div {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.td-sidebar-menu li:hover svg path,
+.td-sidebar-menu .active svg path {
+  fill: transparent;
+  stroke: var(--black);
+}
+
+/* main content area */
+
+.header {
+  background-color: #fff;
+  padding: 33px 45px;
+}
+.td-search-field {
+  max-width: 442px;
+  width: 100%;
+  background-image: url("../images/search.png");
+  background-position: 10px;
+  background-repeat: no-repeat;
+  padding: 5px 35px;
+  border: 1px solid rgba(229, 231, 235, 0.65);
+  border-radius: 6px;
+  outline: none;
+  background-color: rgba(133, 94, 66, 0.05);
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--black);
+}
+.td-search-field::placeholder {
+  color: #6f767e;
+}
+.td-notify-bell {
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.td-user h3 {
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.36px;
+  margin: 0;
+}
+.td-user p {
+  color: #898989;
+  font-size: 12px;
+  letter-spacing: 0.36px;
+  margin: 0;
+}
+.td-overview {
+  background-color: var(--bg-white);
+  padding: 33px 45px;
+}
+.td-dashboard-title {
+  color: var(--black);
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 72px;
+}
+.td-overview-boxes {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.td-stats-title {
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 600;
+  /* line-height: 42px; */
+}
+.td-stats-value {
+  color: var(--yellow);
+  font-size: 42px;
+  font-weight: 600;
+  /* line-height: 52px; */
+  letter-spacing: 0.42px;
+}
+.td-graph-title {
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 42px;
+}
+#barChart {
+  font-family: "Poppins";
+}
+.sidebar {
+  width: 250px;
+}
+@media screen and (max-width: 768px) {
+  .td-sidebar {
+    height: fit-content;
+    width: 100%;
+  }
+}

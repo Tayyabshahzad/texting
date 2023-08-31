@@ -1,0 +1,168 @@
+:root {
+  --yellow: #ff8504;
+  --black: #33343f;
+  --paragraph: #4d4d4d;
+  --bg-white: #f4f4f4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1547px !important;
+}
+
+/* signin */
+.td-logo {
+  left: 36px;
+  top: 10px;
+}
+.td-signin {
+  height: 100vh;
+  background: linear-gradient(to right, #fff 70%, var(--yellow) 30%);
+}
+.td-signin-container .row {
+  max-width: 1655px;
+  height: 100vh;
+  align-items: center;
+}
+.user-form-title {
+  color: var(--black);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  padding-bottom: 20px;
+}
+.user-form-title span {
+  color: var(--yellow);
+}
+.user-form {
+  max-width: 635px;
+  margin: 0 auto;
+}
+input#inputEmail {
+  background-image: url("../images/envelope.svg");
+  background-repeat: no-repeat;
+  background-position: 20px;
+  padding: 20px 20px 20px 70px;
+  background-color: var(--bg-white);
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+input#inputPassword {
+  background-image: url("../images/lock.svg");
+  background-repeat: no-repeat;
+  background-position: 20px;
+  padding: 20px 20px 20px 70px;
+  background-color: var(--bg-white);
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+label.form-check-label {
+  color: #8e8e8e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 156.5%;
+}
+.form-check a {
+  color: var(--yellow);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 156.5%;
+  text-decoration: none;
+}
+.form-check a:hover {
+  color: var(--black);
+}
+.td-signForm-btn {
+  background-color: var(--yellow);
+  border: 1px solid var(--yellow);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 22px 100px;
+  margin: 20px;
+  border-radius: 50px;
+}
+.td-signForm-btn:hover {
+  background-color: transparent;
+  color: var(--black);
+}
+.user-form p {
+  color: var(--paragraph);
+  font-size: 18px;
+  font-weight: 400;
+}
+.user-form p a {
+  color: var(--yellow);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 156.5%;
+  text-decoration: none;
+}
+.user-form p a:hover {
+  color: var(--black);
+}
+.td-signin-container ul#pills-tab {
+  max-width: 635px;
+}
+button#pills-user-tab {
+  border-radius: 10px 0 0 10px;
+  padding: 9px 45px;
+}
+button#pills-business-tab {
+  border-radius: 0 10px 10px 0;
+  padding: 9px 45px;
+}
+.td-signin-container .nav-link.active,
+.nav-link:hover {
+  background-color: var(--yellow) !important;
+  color: var(--black) !important;
+}
+.td-signin-container .nav-link {
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  background: var(--bg-white) !important;
+}
+.td-eye-icon {
+  top: 18px;
+  right: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1399px) {
+  .td-signin {
+    height: 100vh;
+    background: #fff;
+  }
+  .user-form-title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .signin-form {
+    padding-top: 180px;
+  }
+  .td-logo {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  button#pills-user-tab {
+    border-radius: 10px;
+  }
+  button#pills-business-tab {
+    border-radius: 10px;
+  }
+}
